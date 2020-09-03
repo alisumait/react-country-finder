@@ -1,0 +1,72 @@
+{
+  "name": "react-country-finder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-syntax-decorators": "^7.10.4",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "html-loader": "^1.3.0",
+    "mobx": "^5.15.6",
+    "mobx-react": "^6.3.0",
+    "react": "^16.13.1",
+    "react-app-rewire-mobx": "^1.0.9",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^16.13.1",
+    "react-intl-universal": "^2.4.1",
+    "react-scripts": "3.4.3",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build-prod": "webpack --env production -p --config webpack.config.js ",
+    "start-server": "webpack-dev-server --watch --config webpack.config.js",
+    "start": "npm run build-prod && node server/index.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/plugin-syntax-decorators": "^7.10.4",
+    "@babel/register": "^7.0.0",
+    "html-loader": "^1.3.0",
+    "url-loader": "^4.1.0",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.0",
+    "express": "^4.17.1",
+    "mini-css-extract-plugin": "^0.11.0",
+    "mobx": "^5.15.6",
+    "mobx-react": "^6.3.0",
+    "react": "^16.13.1",
+    "react-app-rewire-mobx": "^1.0.9",
+    "react-dom": "^16.13.1",
+    "react-intl-universal": "^2.4.1",
+    "react-scripts": "3.4.3",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

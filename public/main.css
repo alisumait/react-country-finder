@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "MarkProHeavy";
+  src: url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot");
+  src: url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff") format("woff"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.svg#Mark Pro Heavy") format("svg");
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("//db.onlinewebfonts.com/t/c7e919b8358daafbec26cde70a5237f9.eot");
+  src: url("//db.onlinewebfonts.com/t/c7e919b8358daafbec26cde70a5237f9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c7e919b8358daafbec26cde70a5237f9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c7e919b8358daafbec26cde70a5237f9.woff") format("woff"), url("//db.onlinewebfonts.com/t/c7e919b8358daafbec26cde70a5237f9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c7e919b8358daafbec26cde70a5237f9.svg#Mark Pro") format("svg");
+}
+
+html,
+body {
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.text--normal {
+  font-family: MarkPro;
+  margin: 0;
+}
+
+.text--bolder {
+  font-family: MarkProHeavy;
+  margin: 0;
+}
+
+.app {
+  background-size: cover;
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.app-header {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  color: white;
+}
+
+.search-field-wrapper {
+  position: relative;
+}
+
+.search-field {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0xOS43MTg4IDAuODEyNUMxMi4xMTg0IDAuODEyNSA1Ljk0MTg5IDYuOTg5MTIgNS45NDE4OSAxNC41ODk0QzUuOTQxODkgMTcuMTYxIDYuNjUzODUgMTkuNjYzOSA4LjAwODUgMjEuODIyM0wxOC43ODQ4IDM5LjQ1NzdDMTguOTY4NyAzOS43NTYyIDE5LjI0NDIgMzkuOTQgMTkuNTY1OCAzOS45ODU5QzIwLjAwMTkgNDAuMDU0NyAyMC40ODQzIDM5Ljg3MTEgMjAuNzM2OCAzOS40MzQ4TDMxLjU0NCAyMS42Mzg1QzMyLjgyOTYgMTkuNTI2MSAzMy40OTU2IDE3LjA2OTMgMzMuNDk1NiAxNC41ODk0QzMzLjQ5NTYgNi45ODkxMiAyNy4zMTkxIDAuODEyNSAxOS43MTg4IDAuODEyNVpNMTkuNzE4OCAyMS40Nzc4QzE1Ljg2MTQgMjEuNDc3OCAxMi44MzAzIDE4LjM1NSAxMi44MzAzIDE0LjU4OTRDMTIuODMwMyAxMC44MDA2IDE1LjkzIDcuNzAwOTMgMTkuNzE4OCA3LjcwMDkzQzIzLjUwNzUgNy43MDA5MyAyNi42MDcyIDEwLjgwMDYgMjYuNjA3MiAxNC41ODk0QzI2LjYwNzIgMTguMzMyMSAyMy42MjIxIDIxLjQ3NzggMTkuNzE4OCAyMS40Nzc4WiIgZmlsbD0iIzMzNGFjMCIvPgo8cGF0aCBkPSJNMTkuNzE4OCAwLjgxMjVWNy43MDA5M0MyMy41MDc1IDcuNzAwOTMgMjYuNjA3MiAxMC44MDA2IDI2LjYwNzIgMTQuNTg5NEMyNi42MDcyIDE4LjMzMjEgMjMuNjIyMSAyMS40Nzc4IDE5LjcxODggMjEuNDc3OFYzOS45OTkzQzIwLjExMDUgNDAuMDA4NCAyMC41MTM0IDM5LjgyMDYgMjAuNzM2NyAzOS40MzQ4TDMxLjU0MzkgMjEuNjM4NUMzMi44Mjk2IDE5LjUyNjEgMzMuNDk1NiAxNy4wNjkzIDMzLjQ5NTYgMTQuNTg5NEMzMy40OTU2IDYuOTg5MTIgMjcuMzE5MSAwLjgxMjUgMTkuNzE4OCAwLjgxMjVaIiBmaWxsPSIjMzM0YWMwIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDAiPgo8cmVjdCB3aWR0aD0iMzkuMTg3NSIgaGVpZ2h0PSIzOS4xODc1IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4xMjUgMC44MTI1KSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=) no-repeat scroll 16px;
+  background-size: 24px;
+  padding: 16px 16px 16px 48px;
+  margin: auto;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #E6E6E6;
+  position: relative;
+  text-align: left;
+  border-radius: 8px;
+  font-size: 18px;
+  top: 0;
+}
+
+.search-field::placeholder {
+  color: #8D8D8D;
+}
+
+.search-field:focus {
+  outline: none !important;
+  border: 2px solid #334ac0;
+}
+
+.suggestions-list {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  max-height: 300px;
+  width: 100%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #cdcdcd;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.suggestion {
+  list-style-type: none;
+  background-color: white;
+  width: 100%;
+  color: black;
+  padding: 16px;
+  border-bottom: 0.5px solid #cdcdcd;
+  position: relative;
+  text-align: left;
+}
+
+.suggestion:hover,
+.suggestion-active {
+  background-color: #334ac0;
+  color: white;
+}
+
+.hero-section {
+  position: relative;
+  max-width: 980px;
+  margin: 0px auto;
+  font-size: 4.5vw;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.headline {
+  line-height: normal;
+  line-height: .95;
+  color: #334ac0;
+  font-feature-settings: 'ss07'on;
+  margin: 0;
+}
+
+.subheader {
+  position: absolute;
+  font-size: 32px;
+  color: #334ac0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 16px;
+}
+
+.country-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 48px;
+}
+
+.info-card {
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 12px;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 32px 24px 0px 24px;
+}
+
+.info-label {
+  font-size: 3vw;
+}
+
+.info-value {
+  color: #334ac0;
+  font-size: 2.6vw;
+}
+
+.info-details {
+  display: block;
+  margin: auto;
+}
+
+.info-image {
+  width: 100px;
+  height: 100px;
+  margin: 24px 0px;
+}
+
+.exchange-selector {
+  padding: 8px;
+  margin: 8px;
+  border: 2px solid #E6E6E6;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.amount-input {
+  border: 2px solid #E6E6E6;
+  font-size: 16px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  padding: 8px;
+  background-color: white;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=main.css.map*/
